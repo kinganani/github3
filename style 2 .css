@@ -1,0 +1,212 @@
+* body{
+
+    background-color: rgb(30, 151, 184);
+    margin: 0 ;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* header */
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.title-box{
+    background-color:white;
+    position:absolute;
+    z-index: 999;
+    padding: 50px;
+    box-shadow: -13px -13px 2px 1px rgb(244, 241, 241);
+}
+header h1{
+    font-size: 80px;
+    color: black;
+    font-family: "Kenia", sans-serif;  
+ 
+    
+}
+header p{
+    font-size: 25px;
+}
+header h1, header p, li{
+    font-family: "Kenia", sans-serif;
+}
+/* slides */
+.slider{
+    overflow: hidden;
+    width: 300%;
+}
+
+.slides{
+display:flex;
+flex-direction:row;
+align-items: center;
+width:calc(500px *3);
+height: 720px;
+animation:glisse 15s  infinite ease;
+}
+.slid{
+    opacity: 0.5;
+
+}
+
+@keyframes glisse{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform:translateX(0px);
+    }
+    33%{
+        transform:translateX(-500px);
+    }
+    66%{
+        transform:translateX(-500px);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+/* style navigation menu */
+
+section img{
+    width: 100%;
+    font-family: "Kenia", sans-serif;
+}
+
+.pizza{
+    background: url('images/pizza-banner.jpg')100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    
+}
+.salad{
+    background: url('images/salad-banner.jpg') 100%; 
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+.buger{
+    background: url('images/burger-banner.jpg') 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bois{
+    background: url('images/boisson-banner.jpg') 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+} 
+/* section des plats */
+.SD{
+    background-color: white;
+    margin:5px;
+    display:flex;
+    cursor:pointer;
+   cursor:move;
+  transition: 0.2s all;
+
+                                                                                                                                                                                         
+}
+   
+.SD:hover {
+    transform:scale(0.9);
+   transition:0.2s all;
+} 
+
+.SD:hover{
+    transition: 0.2s all;
+    box-shadow: -8px 8px 1px 1px rgb(48, 43, 43);
+}
+
+.pite{
+   padding:35px;
+    line-height:10px;
+    font-family:"Kenia", sans-serif;
+    
+}
+section{
+    padding:50px;
+    
+}
+.pite h3{
+    font-size:20px;
+}
+.pite hr {
+ margin:10px 0 10px 0;
+}
+p.prix{
+    font-weight: bold;
+    font-size:12px;
+} 
+section img{
+    width:330px;
+}
+.g{
+    position:flex;
+    top:50vh;
+    right:50vh;
+    transition:0.4s;
+    transform:translateY(0);
+}
+.g+ main{
+    padding-top:2px;
+    margin: auto;
+    padding: auto;
+}
+.g ul li{
+    transition: 0.3s all;
+    
+}
+.g ul li:hover{
+    transform:scale(0.9);
+    transition:0.3s all;
+    box-shadow: -8px 8px 1px 1px rgb(178, 172, 172);
+    cursor: pointer;
+}
+
+
+
+/* foooter */
+.footer{
+    font-size: 22px;
+    text-align: center;
+}
+/* menu carte */
+.i li{
+    list-style-type:none ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: "Kenia", sans-serif;
+    
+}
+.i li img{
+    font-family: "Kenia", sans-serif; 
+    display: flex;
+    justify-content: center;
+    
+}
+.i{
+    display: flex;
+    flex-direction:row;
+    font-size: 10px;
+    width: 100%;
+    color: white;
+    justify-content:center ;
+}
+.k{
+    width: 100%; 
+    font-family: "Kenia", sans-serif;
+    justify-content: block;
+}
+nav{
+    width:100%;
+    display:flex;
+    justify-content:colum;
+    height:200px;
+}
